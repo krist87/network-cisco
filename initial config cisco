@@ -1,0 +1,33 @@
+# Step 1  Set up a console connection to your router. The following message is displayed:
+
+...
+router con0 is now available
+ 
+# Step 2 Press Return. The following message is displayed:
+
+#Cisco Configuration Professional Express (Cisco CP Express) is installed on this device.
+#This feature requires the one-time use of the username "username1"
+#with the password "password1." The default username and password have a privilege level of 15.
+ 
+Please change these publicly known initial credentials using Cisco CP Express or the Cisco IOS CLI.
+ 
+Here are the Cisco IOS commands.
+ 
+username <myuser> privilege 15 secret 0 <mypassword>
+no username username1
+ 
+Replace <myuser> and <mypassword> with the username and password you want to use.
+ 
+For more information about Cisco CP please follow the instructions in the QUICK START GUIDE for your router...
+...
+User Access Verification
+Username:
+ 
+# Step 3 Enter the username username1, and press Return or Enter. The following prompt is displayed:
+
+Password:
+ 
+# Step 4 Enter the password password1, and press Return or Enter. The following prompt is displayed:
+
+Router#
+ 
